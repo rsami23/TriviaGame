@@ -27,5 +27,16 @@ body {
     text-shadow: 0 0 5px #FFF;
 }
 
-/* Alternative Background */
-/* https://i.pinimg.com/originals/86/44/88/864488f84ba139aa5fdbae3980f0cd86.jpg */
+button {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.scoreCard{
+    padding: 15px;
+    border: 1px solid white;
+    width: 30%;
+    margin: 20px auto 0 auto;
+    border-radius: 5px;
+}
+
