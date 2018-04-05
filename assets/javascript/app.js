@@ -162,13 +162,8 @@ function nextQuestion(){
                 $("#answers").append("<button class='answer' data-choice="+ j + ">" + answers  + "</button>" );
 
             } 
-
-        
-        }
-        
-        
+        }    
     }
-
 
     var btnsArr = Array.from(document.querySelectorAll(".answer"));
     btnsArr.forEach(function(btn){
@@ -176,7 +171,6 @@ function nextQuestion(){
         
     })
 };
-
 
 function checkAnswer(e){
     var correctAnswer = $(".selectQuestion").attr("data-answer");
@@ -207,9 +201,6 @@ function displayScore(){
     $(".wrongAnswers").html(`<h3> Wrong: ${wrongAnswers.length} </h3>`);
 }
 
-
-
-
 //  Variable that will hold our interval ID when we execute
 //  the "run" function
 var intervalId;
@@ -230,13 +221,16 @@ function decrement() {
 // Calling stop function
     stop();
     $(".answer").remove();
+    timer = 20;
+    run();
     nextQuestion();
+    
   }
 };
 
 // Stops the timer from going backwards
 function stop() {
     clearInterval(intervalId);
-
   };
+
 

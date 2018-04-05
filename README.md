@@ -1,6 +1,8 @@
 # TriviaGame
 A Trivia Game Built in JS and jQuery
 
+![Trivia Game ScreenShot](assets/images/triviagame.png)
+
 * Game Rules
 
 1. Click the start button to begin quiz
